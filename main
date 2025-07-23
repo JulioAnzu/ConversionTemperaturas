@@ -11,6 +11,10 @@ public class DesafioTemp {
         double conversionAFahrenheit = (temperaturaCelsius*1.8) + 32;
         int fahrenheitEntera = (int)(conversionAFahrenheit);
 
-        System.out.println("La temperatura final es:" + fahrenheitEntera);
+        String mensaje = String.format("La temperatura de %f Celsius es equivalente a %f Fahrenheit", temperaturaCelsius, conversionAFahrenheit);
+        
+        System.out.println(mensaje);
+        System.out.println("La temperatura en enteros es:" + fahrenheitEntera);
+
   }
 }
